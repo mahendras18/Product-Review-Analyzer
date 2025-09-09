@@ -1,0 +1,10 @@
+{
+  "AMAZON_EMAIL": "7348907106",
+  "AMAZON_PASSWORD": "blackcube",
+  "max_pages": 10,
+  "csv_file": "scraped_reviews.csv",
+  "csv_file_path": "scraped_reviews.csv",
+  "review_column_name": "review_body",
+  "problem_column_name": "problems",
+  "gemini_path": "C:\\Users\\MAHENDRA S\\AppData\\Roaming\\npm\\gemini.cmd"
+}
