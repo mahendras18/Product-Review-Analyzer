@@ -415,7 +415,7 @@ def scrape_flipkart_category_ratings(driver, product_url):
         div_label = a.find("div", class_="NTiEl0")
         if div_label:
             label = div_label.get_text(strip=True)
-            if label.lower() == "overall":   # ✅ SKIP "Overall"
+            if label.lower() == "overall":   # SKIP "Overall"
                 continue
             if not re.match(r"^(?:[0-9]+|Next)$", label, re.I):
                 category_links[label] = "https://www.flipkart.com" + href
@@ -424,7 +424,7 @@ def scrape_flipkart_category_ratings(driver, product_url):
         span_label = a.find("span", class_=lambda x: x and "AgRA+X" in x)
         if span_label:
             label = span_label.get_text(strip=True)
-            if label.lower() == "overall":   # ✅ SKIP "Overall"
+            if label.lower() == "overall":   # SKIP "Overall"
                 continue
             if not re.match(r"^(?:[0-9]+|Next)$", label, re.I):
                 category_links[label] = "https://www.flipkart.com" + href
@@ -789,5 +789,6 @@ output_box.grid(row=6, column=0, columnspan=2, padx=10, pady=5)
 chat_input_var = tk.StringVar()
 chat_input_entry = tk.Entry(container, textvariable=chat_input_var, width=50)
 chat_send_btn = tk.Button(container, text="Send", bg="green", fg="white", command=send_chat_question)
+
 
 root.mainloop()
