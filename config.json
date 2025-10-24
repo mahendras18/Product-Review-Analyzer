@@ -1,0 +1,19 @@
+{
+  "AMAZON_EMAIL": "7349769390",
+  "AMAZON_PASSWORD": "boat007",
+  "max_pages": 2,
+  "csv_file": "scraped_reviews.csv",
+  "csv_file_path": "scraped_reviews.csv",
+  "columns_to_analyze": [
+    "product_name",
+    "overall_rating",
+    "total_ratings",
+    "reviewer_name",
+    "star_rating",
+    "review_date"
+  ],
+  "review_column_name": "review_body",
+  "problem_column_name": "problems",
+  "gemini_path": "C:\\Users\\MAHENDRA S\\AppData\\Roaming\\npm\\gemini.cmd",
+  "headless": false
+}
